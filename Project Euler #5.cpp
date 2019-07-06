@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
 	int primelist[] = { 2,3,5,7,11,13,17,19 };
-	int primes = sizeof(primelist) / 4;
 	int LCM = 1;
 	for (int x = 0; x < sizeof(primelist) / 4; x++) {
 		int z = primelist[x];
