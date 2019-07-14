@@ -1,6 +1,8 @@
 #include <iostream>
 #include <array>
+#include<ctime>
 using namespace std;
+int start_s=clock() ;
 int main()
 {
 	int primelist[] = { 2,3,5,7,11,13,17,19 };
@@ -16,5 +18,7 @@ int main()
 		}
 	}
 	cout << LCM << endl;
+	int stop_s = clock();
+    cout << (stop_s - start_s) / double(CLOCKS_PER_SEC);
 	return 0;
 }
