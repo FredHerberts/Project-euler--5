@@ -6,12 +6,10 @@ LCM = 1
 
 for x in primelist:
     y = 1
-    while 20 > y:
+    while 20 > y*x:
         y = y*x
-        if 20 > y:
-            LCM = LCM *x
+        LCM = LCM *x
 
 end = time.time()
 print(end - start)
 print(LCM)
-
